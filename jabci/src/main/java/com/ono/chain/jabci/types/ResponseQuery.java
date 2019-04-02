@@ -16,13 +16,10 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private ResponseQuery() {
-    code_ = 0;
     log_ = "";
     info_ = "";
-    index_ = 0L;
     key_ = com.google.protobuf.ByteString.EMPTY;
     value_ = com.google.protobuf.ByteString.EMPTY;
-    height_ = 0L;
     codespace_ = "";
   }
 
@@ -107,7 +104,7 @@ private static final long serialVersionUID = 0L;
             break;
           }
           default: {
-            if (!parseUnknownFieldProto3(
+            if (!parseUnknownField(
                 input, unknownFields, extensionRegistry, tag)) {
               done = true;
             }
@@ -127,13 +124,13 @@ private static final long serialVersionUID = 0L;
   }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.ono.chain.jabci.types.Types.internal_static_com_github_jtendermint_jabci_types_ResponseQuery_descriptor;
+    return com.ono.chain.jabci.types.Types.internal_static_com_ono_chain_jabci_types_ResponseQuery_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.ono.chain.jabci.types.Types.internal_static_com_github_jtendermint_jabci_types_ResponseQuery_fieldAccessorTable
+    return com.ono.chain.jabci.types.Types.internal_static_com_ono_chain_jabci_types_ResponseQuery_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
             com.ono.chain.jabci.types.ResponseQuery.class, com.ono.chain.jabci.types.ResponseQuery.Builder.class);
   }
@@ -420,30 +417,29 @@ private static final long serialVersionUID = 0L;
     }
     com.ono.chain.jabci.types.ResponseQuery other = (com.ono.chain.jabci.types.ResponseQuery) obj;
 
-    boolean result = true;
-    result = result && (getCode()
-        == other.getCode());
-    result = result && getLog()
-        .equals(other.getLog());
-    result = result && getInfo()
-        .equals(other.getInfo());
-    result = result && (getIndex()
-        == other.getIndex());
-    result = result && getKey()
-        .equals(other.getKey());
-    result = result && getValue()
-        .equals(other.getValue());
-    result = result && (hasProof() == other.hasProof());
+    if (getCode()
+        != other.getCode()) return false;
+    if (!getLog()
+        .equals(other.getLog())) return false;
+    if (!getInfo()
+        .equals(other.getInfo())) return false;
+    if (getIndex()
+        != other.getIndex()) return false;
+    if (!getKey()
+        .equals(other.getKey())) return false;
+    if (!getValue()
+        .equals(other.getValue())) return false;
+    if (hasProof() != other.hasProof()) return false;
     if (hasProof()) {
-      result = result && getProof()
-          .equals(other.getProof());
+      if (!getProof()
+          .equals(other.getProof())) return false;
     }
-    result = result && (getHeight()
-        == other.getHeight());
-    result = result && getCodespace()
-        .equals(other.getCodespace());
-    result = result && unknownFields.equals(other.unknownFields);
-    return result;
+    if (getHeight()
+        != other.getHeight()) return false;
+    if (!getCodespace()
+        .equals(other.getCodespace())) return false;
+    if (!unknownFields.equals(other.unknownFields)) return false;
+    return true;
   }
 
   @java.lang.Override
@@ -579,13 +575,13 @@ private static final long serialVersionUID = 0L;
       com.ono.chain.jabci.types.ResponseQueryOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.ono.chain.jabci.types.Types.internal_static_com_github_jtendermint_jabci_types_ResponseQuery_descriptor;
+      return com.ono.chain.jabci.types.Types.internal_static_com_ono_chain_jabci_types_ResponseQuery_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.ono.chain.jabci.types.Types.internal_static_com_github_jtendermint_jabci_types_ResponseQuery_fieldAccessorTable
+      return com.ono.chain.jabci.types.Types.internal_static_com_ono_chain_jabci_types_ResponseQuery_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.ono.chain.jabci.types.ResponseQuery.class, com.ono.chain.jabci.types.ResponseQuery.Builder.class);
     }
@@ -636,7 +632,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.ono.chain.jabci.types.Types.internal_static_com_github_jtendermint_jabci_types_ResponseQuery_descriptor;
+      return com.ono.chain.jabci.types.Types.internal_static_com_ono_chain_jabci_types_ResponseQuery_descriptor;
     }
 
     @java.lang.Override
@@ -675,35 +671,35 @@ private static final long serialVersionUID = 0L;
 
     @java.lang.Override
     public Builder clone() {
-      return (Builder) super.clone();
+      return super.clone();
     }
     @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
         java.lang.Object value) {
-      return (Builder) super.setField(field, value);
+      return super.setField(field, value);
     }
     @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
-      return (Builder) super.clearField(field);
+      return super.clearField(field);
     }
     @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
-      return (Builder) super.clearOneof(oneof);
+      return super.clearOneof(oneof);
     }
     @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
         int index, java.lang.Object value) {
-      return (Builder) super.setRepeatedField(field, index, value);
+      return super.setRepeatedField(field, index, value);
     }
     @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
         java.lang.Object value) {
-      return (Builder) super.addRepeatedField(field, value);
+      return super.addRepeatedField(field, value);
     }
     @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
@@ -1064,7 +1060,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private com.ono.chain.jabci.types.Proof proof_ = null;
+    private com.ono.chain.jabci.types.Proof proof_;
     private com.google.protobuf.SingleFieldBuilderV3<
         com.ono.chain.jabci.types.Proof, com.ono.chain.jabci.types.Proof.Builder, com.ono.chain.jabci.types.ProofOrBuilder> proofBuilder_;
     /**
@@ -1168,7 +1164,7 @@ private static final long serialVersionUID = 0L;
      * <code>.com.ono.chain.jabci.types.Proof proof = 8;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.ono.chain.jabci.types.Proof, com.ono.chain.jabci.types.Proof.Builder, com.ono.chain.jabci.types.ProofOrBuilder>
+        com.ono.chain.jabci.types.Proof, com.ono.chain.jabci.types.Proof.Builder, com.ono.chain.jabci.types.ProofOrBuilder> 
         getProofFieldBuilder() {
       if (proofBuilder_ == null) {
         proofBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -1278,7 +1274,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
-      return super.setUnknownFieldsProto3(unknownFields);
+      return super.setUnknownFields(unknownFields);
     }
 
     @java.lang.Override

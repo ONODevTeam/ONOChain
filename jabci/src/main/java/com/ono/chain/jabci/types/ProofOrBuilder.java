@@ -10,7 +10,7 @@ public interface ProofOrBuilder extends
   /**
    * <code>repeated .com.ono.chain.jabci.types.ProofOp ops = 1;</code>
    */
-  java.util.List<com.ono.chain.jabci.types.ProofOp>
+  java.util.List<com.ono.chain.jabci.types.ProofOp> 
       getOpsList();
   /**
    * <code>repeated .com.ono.chain.jabci.types.ProofOp ops = 1;</code>
@@ -23,7 +23,7 @@ public interface ProofOrBuilder extends
   /**
    * <code>repeated .com.ono.chain.jabci.types.ProofOp ops = 1;</code>
    */
-  java.util.List<? extends com.ono.chain.jabci.types.ProofOpOrBuilder>
+  java.util.List<? extends com.ono.chain.jabci.types.ProofOpOrBuilder> 
       getOpsOrBuilderList();
   /**
    * <code>repeated .com.ono.chain.jabci.types.ProofOp ops = 1;</code>

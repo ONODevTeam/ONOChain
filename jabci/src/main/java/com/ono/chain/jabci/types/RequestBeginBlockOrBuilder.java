@@ -41,7 +41,7 @@ public interface RequestBeginBlockOrBuilder extends
   /**
    * <code>repeated .com.ono.chain.jabci.types.Evidence byzantine_validators = 4;</code>
    */
-  java.util.List<com.ono.chain.jabci.types.Evidence>
+  java.util.List<com.ono.chain.jabci.types.Evidence> 
       getByzantineValidatorsList();
   /**
    * <code>repeated .com.ono.chain.jabci.types.Evidence byzantine_validators = 4;</code>
@@ -54,7 +54,7 @@ public interface RequestBeginBlockOrBuilder extends
   /**
    * <code>repeated .com.ono.chain.jabci.types.Evidence byzantine_validators = 4;</code>
    */
-  java.util.List<? extends com.ono.chain.jabci.types.EvidenceOrBuilder>
+  java.util.List<? extends com.ono.chain.jabci.types.EvidenceOrBuilder> 
       getByzantineValidatorsOrBuilderList();
   /**
    * <code>repeated .com.ono.chain.jabci.types.Evidence byzantine_validators = 4;</code>

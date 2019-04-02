@@ -15,7 +15,7 @@ public interface LastCommitInfoOrBuilder extends
   /**
    * <code>repeated .com.ono.chain.jabci.types.VoteInfo votes = 2;</code>
    */
-  java.util.List<com.ono.chain.jabci.types.VoteInfo>
+  java.util.List<com.ono.chain.jabci.types.VoteInfo> 
       getVotesList();
   /**
    * <code>repeated .com.ono.chain.jabci.types.VoteInfo votes = 2;</code>
@@ -28,7 +28,7 @@ public interface LastCommitInfoOrBuilder extends
   /**
    * <code>repeated .com.ono.chain.jabci.types.VoteInfo votes = 2;</code>
    */
-  java.util.List<? extends com.ono.chain.jabci.types.VoteInfoOrBuilder>
+  java.util.List<? extends com.ono.chain.jabci.types.VoteInfoOrBuilder> 
       getVotesOrBuilderList();
   /**
    * <code>repeated .com.ono.chain.jabci.types.VoteInfo votes = 2;</code>

@@ -10,7 +10,7 @@ public interface ResponseEndBlockOrBuilder extends
   /**
    * <code>repeated .com.ono.chain.jabci.types.ValidatorUpdate validator_updates = 1;</code>
    */
-  java.util.List<com.ono.chain.jabci.types.ValidatorUpdate>
+  java.util.List<com.ono.chain.jabci.types.ValidatorUpdate> 
       getValidatorUpdatesList();
   /**
    * <code>repeated .com.ono.chain.jabci.types.ValidatorUpdate validator_updates = 1;</code>
@@ -23,7 +23,7 @@ public interface ResponseEndBlockOrBuilder extends
   /**
    * <code>repeated .com.ono.chain.jabci.types.ValidatorUpdate validator_updates = 1;</code>
    */
-  java.util.List<? extends com.ono.chain.jabci.types.ValidatorUpdateOrBuilder>
+  java.util.List<? extends com.ono.chain.jabci.types.ValidatorUpdateOrBuilder> 
       getValidatorUpdatesOrBuilderList();
   /**
    * <code>repeated .com.ono.chain.jabci.types.ValidatorUpdate validator_updates = 1;</code>
@@ -47,7 +47,7 @@ public interface ResponseEndBlockOrBuilder extends
   /**
    * <code>repeated .com.ono.chain.jabci.types.KVPair tags = 3;</code>
    */
-  java.util.List<com.ono.chain.jabci.types.KVPair>
+  java.util.List<com.ono.chain.jabci.types.KVPair> 
       getTagsList();
   /**
    * <code>repeated .com.ono.chain.jabci.types.KVPair tags = 3;</code>
@@ -60,7 +60,7 @@ public interface ResponseEndBlockOrBuilder extends
   /**
    * <code>repeated .com.ono.chain.jabci.types.KVPair tags = 3;</code>
    */
-  java.util.List<? extends com.ono.chain.jabci.types.KVPairOrBuilder>
+  java.util.List<? extends com.ono.chain.jabci.types.KVPairOrBuilder> 
       getTagsOrBuilderList();
   /**
    * <code>repeated .com.ono.chain.jabci.types.KVPair tags = 3;</code>

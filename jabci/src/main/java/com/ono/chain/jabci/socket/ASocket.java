@@ -26,6 +26,7 @@ package com.ono.chain.jabci.socket;
 import java.io.IOException;
 import java.math.BigInteger;
 import java.nio.ByteBuffer;
+import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -211,6 +212,10 @@ public abstract class ASocket {
         }
         build.append(">");
         return build.toString();
+    }
+    
+    public static String byteArrayToUtf8(byte[] bArr) {
+        return new String(bArr, Charset.forName("utf-8"));
     }
 
     public static void printByteArray(byte[] bArr) {

@@ -16,12 +16,9 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private ResponseDeliverTx() {
-    code_ = 0;
     data_ = com.google.protobuf.ByteString.EMPTY;
     log_ = "";
     info_ = "";
-    gasWanted_ = 0L;
-    gasUsed_ = 0L;
     tags_ = java.util.Collections.emptyList();
     codespace_ = "";
   }
@@ -83,7 +80,7 @@ private static final long serialVersionUID = 0L;
             break;
           }
           case 58: {
-            if (!((mutable_bitField0_ & 0x00000040) == 0x00000040)) {
+            if (!((mutable_bitField0_ & 0x00000040) != 0)) {
               tags_ = new java.util.ArrayList<com.ono.chain.jabci.types.KVPair>();
               mutable_bitField0_ |= 0x00000040;
             }
@@ -98,7 +95,7 @@ private static final long serialVersionUID = 0L;
             break;
           }
           default: {
-            if (!parseUnknownFieldProto3(
+            if (!parseUnknownField(
                 input, unknownFields, extensionRegistry, tag)) {
               done = true;
             }
@@ -112,7 +109,7 @@ private static final long serialVersionUID = 0L;
       throw new com.google.protobuf.InvalidProtocolBufferException(
           e).setUnfinishedMessage(this);
     } finally {
-      if (((mutable_bitField0_ & 0x00000040) == 0x00000040)) {
+      if (((mutable_bitField0_ & 0x00000040) != 0)) {
         tags_ = java.util.Collections.unmodifiableList(tags_);
       }
       this.unknownFields = unknownFields.build();
@@ -121,13 +118,13 @@ private static final long serialVersionUID = 0L;
   }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.ono.chain.jabci.types.Types.internal_static_com_github_jtendermint_jabci_types_ResponseDeliverTx_descriptor;
+    return com.ono.chain.jabci.types.Types.internal_static_com_ono_chain_jabci_types_ResponseDeliverTx_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.ono.chain.jabci.types.Types.internal_static_com_github_jtendermint_jabci_types_ResponseDeliverTx_fieldAccessorTable
+    return com.ono.chain.jabci.types.Types.internal_static_com_ono_chain_jabci_types_ResponseDeliverTx_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
             com.ono.chain.jabci.types.ResponseDeliverTx.class, com.ono.chain.jabci.types.ResponseDeliverTx.Builder.class);
   }
@@ -264,7 +261,7 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .com.ono.chain.jabci.types.KVPair tags = 7;</code>
    */
-  public java.util.List<? extends com.ono.chain.jabci.types.KVPairOrBuilder>
+  public java.util.List<? extends com.ono.chain.jabci.types.KVPairOrBuilder> 
       getTagsOrBuilderList() {
     return tags_;
   }
@@ -413,25 +410,24 @@ private static final long serialVersionUID = 0L;
     }
     com.ono.chain.jabci.types.ResponseDeliverTx other = (com.ono.chain.jabci.types.ResponseDeliverTx) obj;
 
-    boolean result = true;
-    result = result && (getCode()
-        == other.getCode());
-    result = result && getData()
-        .equals(other.getData());
-    result = result && getLog()
-        .equals(other.getLog());
-    result = result && getInfo()
-        .equals(other.getInfo());
-    result = result && (getGasWanted()
-        == other.getGasWanted());
-    result = result && (getGasUsed()
-        == other.getGasUsed());
-    result = result && getTagsList()
-        .equals(other.getTagsList());
-    result = result && getCodespace()
-        .equals(other.getCodespace());
-    result = result && unknownFields.equals(other.unknownFields);
-    return result;
+    if (getCode()
+        != other.getCode()) return false;
+    if (!getData()
+        .equals(other.getData())) return false;
+    if (!getLog()
+        .equals(other.getLog())) return false;
+    if (!getInfo()
+        .equals(other.getInfo())) return false;
+    if (getGasWanted()
+        != other.getGasWanted()) return false;
+    if (getGasUsed()
+        != other.getGasUsed()) return false;
+    if (!getTagsList()
+        .equals(other.getTagsList())) return false;
+    if (!getCodespace()
+        .equals(other.getCodespace())) return false;
+    if (!unknownFields.equals(other.unknownFields)) return false;
+    return true;
   }
 
   @java.lang.Override
@@ -565,13 +561,13 @@ private static final long serialVersionUID = 0L;
       com.ono.chain.jabci.types.ResponseDeliverTxOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.ono.chain.jabci.types.Types.internal_static_com_github_jtendermint_jabci_types_ResponseDeliverTx_descriptor;
+      return com.ono.chain.jabci.types.Types.internal_static_com_ono_chain_jabci_types_ResponseDeliverTx_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.ono.chain.jabci.types.Types.internal_static_com_github_jtendermint_jabci_types_ResponseDeliverTx_fieldAccessorTable
+      return com.ono.chain.jabci.types.Types.internal_static_com_ono_chain_jabci_types_ResponseDeliverTx_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.ono.chain.jabci.types.ResponseDeliverTx.class, com.ono.chain.jabci.types.ResponseDeliverTx.Builder.class);
     }
@@ -621,7 +617,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.ono.chain.jabci.types.Types.internal_static_com_github_jtendermint_jabci_types_ResponseDeliverTx_descriptor;
+      return com.ono.chain.jabci.types.Types.internal_static_com_ono_chain_jabci_types_ResponseDeliverTx_descriptor;
     }
 
     @java.lang.Override
@@ -650,7 +646,7 @@ private static final long serialVersionUID = 0L;
       result.gasWanted_ = gasWanted_;
       result.gasUsed_ = gasUsed_;
       if (tagsBuilder_ == null) {
-        if (((bitField0_ & 0x00000040) == 0x00000040)) {
+        if (((bitField0_ & 0x00000040) != 0)) {
           tags_ = java.util.Collections.unmodifiableList(tags_);
           bitField0_ = (bitField0_ & ~0x00000040);
         }
@@ -666,35 +662,35 @@ private static final long serialVersionUID = 0L;
 
     @java.lang.Override
     public Builder clone() {
-      return (Builder) super.clone();
+      return super.clone();
     }
     @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
         java.lang.Object value) {
-      return (Builder) super.setField(field, value);
+      return super.setField(field, value);
     }
     @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
-      return (Builder) super.clearField(field);
+      return super.clearField(field);
     }
     @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
-      return (Builder) super.clearOneof(oneof);
+      return super.clearOneof(oneof);
     }
     @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
         int index, java.lang.Object value) {
-      return (Builder) super.setRepeatedField(field, index, value);
+      return super.setRepeatedField(field, index, value);
     }
     @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
         java.lang.Object value) {
-      return (Builder) super.addRepeatedField(field, value);
+      return super.addRepeatedField(field, value);
     }
     @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
@@ -1076,7 +1072,7 @@ private static final long serialVersionUID = 0L;
     private java.util.List<com.ono.chain.jabci.types.KVPair> tags_ =
       java.util.Collections.emptyList();
     private void ensureTagsIsMutable() {
-      if (!((bitField0_ & 0x00000040) == 0x00000040)) {
+      if (!((bitField0_ & 0x00000040) != 0)) {
         tags_ = new java.util.ArrayList<com.ono.chain.jabci.types.KVPair>(tags_);
         bitField0_ |= 0x00000040;
        }
@@ -1268,7 +1264,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .com.ono.chain.jabci.types.KVPair tags = 7;</code>
      */
-    public java.util.List<? extends com.ono.chain.jabci.types.KVPairOrBuilder>
+    public java.util.List<? extends com.ono.chain.jabci.types.KVPairOrBuilder> 
          getTagsOrBuilderList() {
       if (tagsBuilder_ != null) {
         return tagsBuilder_.getMessageOrBuilderList();
@@ -1294,18 +1290,18 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .com.ono.chain.jabci.types.KVPair tags = 7;</code>
      */
-    public java.util.List<com.ono.chain.jabci.types.KVPair.Builder>
+    public java.util.List<com.ono.chain.jabci.types.KVPair.Builder> 
          getTagsBuilderList() {
       return getTagsFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.ono.chain.jabci.types.KVPair, com.ono.chain.jabci.types.KVPair.Builder, com.ono.chain.jabci.types.KVPairOrBuilder>
+        com.ono.chain.jabci.types.KVPair, com.ono.chain.jabci.types.KVPair.Builder, com.ono.chain.jabci.types.KVPairOrBuilder> 
         getTagsFieldBuilder() {
       if (tagsBuilder_ == null) {
         tagsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             com.ono.chain.jabci.types.KVPair, com.ono.chain.jabci.types.KVPair.Builder, com.ono.chain.jabci.types.KVPairOrBuilder>(
                 tags_,
-                ((bitField0_ & 0x00000040) == 0x00000040),
+                ((bitField0_ & 0x00000040) != 0),
                 getParentForChildren(),
                 isClean());
         tags_ = null;
@@ -1384,7 +1380,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
-      return super.setUnknownFieldsProto3(unknownFields);
+      return super.setUnknownFields(unknownFields);
     }
 
     @java.lang.Override

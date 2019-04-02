@@ -1,5 +1,5 @@
 syntax = "proto3";
-package com.github.jtendermint.jabci.types;
+package com.ono.chain.jabci.types;
 option java_multiple_files = true;
 
 // For more information on gogo.proto, see:

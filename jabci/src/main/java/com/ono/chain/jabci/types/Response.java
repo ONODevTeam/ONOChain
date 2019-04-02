@@ -211,7 +211,7 @@ private static final long serialVersionUID = 0L;
             break;
           }
           default: {
-            if (!parseUnknownFieldProto3(
+            if (!parseUnknownField(
                 input, unknownFields, extensionRegistry, tag)) {
               done = true;
             }
@@ -231,13 +231,13 @@ private static final long serialVersionUID = 0L;
   }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.ono.chain.jabci.types.Types.internal_static_com_github_jtendermint_jabci_types_Response_descriptor;
+    return com.ono.chain.jabci.types.Types.internal_static_com_ono_chain_jabci_types_Response_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.ono.chain.jabci.types.Types.internal_static_com_github_jtendermint_jabci_types_Response_fieldAccessorTable
+    return com.ono.chain.jabci.types.Types.internal_static_com_ono_chain_jabci_types_Response_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
             com.ono.chain.jabci.types.Response.class, com.ono.chain.jabci.types.Response.Builder.class);
   }
@@ -734,64 +734,61 @@ private static final long serialVersionUID = 0L;
     }
     com.ono.chain.jabci.types.Response other = (com.ono.chain.jabci.types.Response) obj;
 
-    boolean result = true;
-    result = result && getValueCase().equals(
-        other.getValueCase());
-    if (!result) return false;
+    if (!getValueCase().equals(other.getValueCase())) return false;
     switch (valueCase_) {
       case 1:
-        result = result && getException()
-            .equals(other.getException());
+        if (!getException()
+            .equals(other.getException())) return false;
         break;
       case 2:
-        result = result && getEcho()
-            .equals(other.getEcho());
+        if (!getEcho()
+            .equals(other.getEcho())) return false;
         break;
       case 3:
-        result = result && getFlush()
-            .equals(other.getFlush());
+        if (!getFlush()
+            .equals(other.getFlush())) return false;
         break;
       case 4:
-        result = result && getInfo()
-            .equals(other.getInfo());
+        if (!getInfo()
+            .equals(other.getInfo())) return false;
         break;
       case 5:
-        result = result && getSetOption()
-            .equals(other.getSetOption());
+        if (!getSetOption()
+            .equals(other.getSetOption())) return false;
         break;
       case 6:
-        result = result && getInitChain()
-            .equals(other.getInitChain());
+        if (!getInitChain()
+            .equals(other.getInitChain())) return false;
         break;
       case 7:
-        result = result && getQuery()
-            .equals(other.getQuery());
+        if (!getQuery()
+            .equals(other.getQuery())) return false;
         break;
       case 8:
-        result = result && getBeginBlock()
-            .equals(other.getBeginBlock());
+        if (!getBeginBlock()
+            .equals(other.getBeginBlock())) return false;
         break;
       case 9:
-        result = result && getCheckTx()
-            .equals(other.getCheckTx());
+        if (!getCheckTx()
+            .equals(other.getCheckTx())) return false;
         break;
       case 10:
-        result = result && getDeliverTx()
-            .equals(other.getDeliverTx());
+        if (!getDeliverTx()
+            .equals(other.getDeliverTx())) return false;
         break;
       case 11:
-        result = result && getEndBlock()
-            .equals(other.getEndBlock());
+        if (!getEndBlock()
+            .equals(other.getEndBlock())) return false;
         break;
       case 12:
-        result = result && getCommit()
-            .equals(other.getCommit());
+        if (!getCommit()
+            .equals(other.getCommit())) return false;
         break;
       case 0:
       default:
     }
-    result = result && unknownFields.equals(other.unknownFields);
-    return result;
+    if (!unknownFields.equals(other.unknownFields)) return false;
+    return true;
   }
 
   @java.lang.Override
@@ -957,13 +954,13 @@ private static final long serialVersionUID = 0L;
       com.ono.chain.jabci.types.ResponseOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.ono.chain.jabci.types.Types.internal_static_com_github_jtendermint_jabci_types_Response_descriptor;
+      return com.ono.chain.jabci.types.Types.internal_static_com_ono_chain_jabci_types_Response_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.ono.chain.jabci.types.Types.internal_static_com_github_jtendermint_jabci_types_Response_fieldAccessorTable
+      return com.ono.chain.jabci.types.Types.internal_static_com_ono_chain_jabci_types_Response_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.ono.chain.jabci.types.Response.class, com.ono.chain.jabci.types.Response.Builder.class);
     }
@@ -994,7 +991,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.ono.chain.jabci.types.Types.internal_static_com_github_jtendermint_jabci_types_Response_descriptor;
+      return com.ono.chain.jabci.types.Types.internal_static_com_ono_chain_jabci_types_Response_descriptor;
     }
 
     @java.lang.Override
@@ -1105,35 +1102,35 @@ private static final long serialVersionUID = 0L;
 
     @java.lang.Override
     public Builder clone() {
-      return (Builder) super.clone();
+      return super.clone();
     }
     @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
         java.lang.Object value) {
-      return (Builder) super.setField(field, value);
+      return super.setField(field, value);
     }
     @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
-      return (Builder) super.clearField(field);
+      return super.clearField(field);
     }
     @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
-      return (Builder) super.clearOneof(oneof);
+      return super.clearOneof(oneof);
     }
     @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
         int index, java.lang.Object value) {
-      return (Builder) super.setRepeatedField(field, index, value);
+      return super.setRepeatedField(field, index, value);
     }
     @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
         java.lang.Object value) {
-      return (Builder) super.addRepeatedField(field, value);
+      return super.addRepeatedField(field, value);
     }
     @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
@@ -1362,7 +1359,7 @@ private static final long serialVersionUID = 0L;
      * <code>.com.ono.chain.jabci.types.ResponseException exception = 1;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.ono.chain.jabci.types.ResponseException, com.ono.chain.jabci.types.ResponseException.Builder, com.ono.chain.jabci.types.ResponseExceptionOrBuilder>
+        com.ono.chain.jabci.types.ResponseException, com.ono.chain.jabci.types.ResponseException.Builder, com.ono.chain.jabci.types.ResponseExceptionOrBuilder> 
         getExceptionFieldBuilder() {
       if (exceptionBuilder_ == null) {
         if (!(valueCase_ == 1)) {
@@ -1498,7 +1495,7 @@ private static final long serialVersionUID = 0L;
      * <code>.com.ono.chain.jabci.types.ResponseEcho echo = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.ono.chain.jabci.types.ResponseEcho, com.ono.chain.jabci.types.ResponseEcho.Builder, com.ono.chain.jabci.types.ResponseEchoOrBuilder>
+        com.ono.chain.jabci.types.ResponseEcho, com.ono.chain.jabci.types.ResponseEcho.Builder, com.ono.chain.jabci.types.ResponseEchoOrBuilder> 
         getEchoFieldBuilder() {
       if (echoBuilder_ == null) {
         if (!(valueCase_ == 2)) {
@@ -1634,7 +1631,7 @@ private static final long serialVersionUID = 0L;
      * <code>.com.ono.chain.jabci.types.ResponseFlush flush = 3;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.ono.chain.jabci.types.ResponseFlush, com.ono.chain.jabci.types.ResponseFlush.Builder, com.ono.chain.jabci.types.ResponseFlushOrBuilder>
+        com.ono.chain.jabci.types.ResponseFlush, com.ono.chain.jabci.types.ResponseFlush.Builder, com.ono.chain.jabci.types.ResponseFlushOrBuilder> 
         getFlushFieldBuilder() {
       if (flushBuilder_ == null) {
         if (!(valueCase_ == 3)) {
@@ -1770,7 +1767,7 @@ private static final long serialVersionUID = 0L;
      * <code>.com.ono.chain.jabci.types.ResponseInfo info = 4;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.ono.chain.jabci.types.ResponseInfo, com.ono.chain.jabci.types.ResponseInfo.Builder, com.ono.chain.jabci.types.ResponseInfoOrBuilder>
+        com.ono.chain.jabci.types.ResponseInfo, com.ono.chain.jabci.types.ResponseInfo.Builder, com.ono.chain.jabci.types.ResponseInfoOrBuilder> 
         getInfoFieldBuilder() {
       if (infoBuilder_ == null) {
         if (!(valueCase_ == 4)) {
@@ -1906,7 +1903,7 @@ private static final long serialVersionUID = 0L;
      * <code>.com.ono.chain.jabci.types.ResponseSetOption set_option = 5;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.ono.chain.jabci.types.ResponseSetOption, com.ono.chain.jabci.types.ResponseSetOption.Builder, com.ono.chain.jabci.types.ResponseSetOptionOrBuilder>
+        com.ono.chain.jabci.types.ResponseSetOption, com.ono.chain.jabci.types.ResponseSetOption.Builder, com.ono.chain.jabci.types.ResponseSetOptionOrBuilder> 
         getSetOptionFieldBuilder() {
       if (setOptionBuilder_ == null) {
         if (!(valueCase_ == 5)) {
@@ -2042,7 +2039,7 @@ private static final long serialVersionUID = 0L;
      * <code>.com.ono.chain.jabci.types.ResponseInitChain init_chain = 6;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.ono.chain.jabci.types.ResponseInitChain, com.ono.chain.jabci.types.ResponseInitChain.Builder, com.ono.chain.jabci.types.ResponseInitChainOrBuilder>
+        com.ono.chain.jabci.types.ResponseInitChain, com.ono.chain.jabci.types.ResponseInitChain.Builder, com.ono.chain.jabci.types.ResponseInitChainOrBuilder> 
         getInitChainFieldBuilder() {
       if (initChainBuilder_ == null) {
         if (!(valueCase_ == 6)) {
@@ -2178,7 +2175,7 @@ private static final long serialVersionUID = 0L;
      * <code>.com.ono.chain.jabci.types.ResponseQuery query = 7;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.ono.chain.jabci.types.ResponseQuery, com.ono.chain.jabci.types.ResponseQuery.Builder, com.ono.chain.jabci.types.ResponseQueryOrBuilder>
+        com.ono.chain.jabci.types.ResponseQuery, com.ono.chain.jabci.types.ResponseQuery.Builder, com.ono.chain.jabci.types.ResponseQueryOrBuilder> 
         getQueryFieldBuilder() {
       if (queryBuilder_ == null) {
         if (!(valueCase_ == 7)) {
@@ -2314,7 +2311,7 @@ private static final long serialVersionUID = 0L;
      * <code>.com.ono.chain.jabci.types.ResponseBeginBlock begin_block = 8;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.ono.chain.jabci.types.ResponseBeginBlock, com.ono.chain.jabci.types.ResponseBeginBlock.Builder, com.ono.chain.jabci.types.ResponseBeginBlockOrBuilder>
+        com.ono.chain.jabci.types.ResponseBeginBlock, com.ono.chain.jabci.types.ResponseBeginBlock.Builder, com.ono.chain.jabci.types.ResponseBeginBlockOrBuilder> 
         getBeginBlockFieldBuilder() {
       if (beginBlockBuilder_ == null) {
         if (!(valueCase_ == 8)) {
@@ -2450,7 +2447,7 @@ private static final long serialVersionUID = 0L;
      * <code>.com.ono.chain.jabci.types.ResponseCheckTx check_tx = 9;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.ono.chain.jabci.types.ResponseCheckTx, com.ono.chain.jabci.types.ResponseCheckTx.Builder, com.ono.chain.jabci.types.ResponseCheckTxOrBuilder>
+        com.ono.chain.jabci.types.ResponseCheckTx, com.ono.chain.jabci.types.ResponseCheckTx.Builder, com.ono.chain.jabci.types.ResponseCheckTxOrBuilder> 
         getCheckTxFieldBuilder() {
       if (checkTxBuilder_ == null) {
         if (!(valueCase_ == 9)) {
@@ -2586,7 +2583,7 @@ private static final long serialVersionUID = 0L;
      * <code>.com.ono.chain.jabci.types.ResponseDeliverTx deliver_tx = 10;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.ono.chain.jabci.types.ResponseDeliverTx, com.ono.chain.jabci.types.ResponseDeliverTx.Builder, com.ono.chain.jabci.types.ResponseDeliverTxOrBuilder>
+        com.ono.chain.jabci.types.ResponseDeliverTx, com.ono.chain.jabci.types.ResponseDeliverTx.Builder, com.ono.chain.jabci.types.ResponseDeliverTxOrBuilder> 
         getDeliverTxFieldBuilder() {
       if (deliverTxBuilder_ == null) {
         if (!(valueCase_ == 10)) {
@@ -2722,7 +2719,7 @@ private static final long serialVersionUID = 0L;
      * <code>.com.ono.chain.jabci.types.ResponseEndBlock end_block = 11;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.ono.chain.jabci.types.ResponseEndBlock, com.ono.chain.jabci.types.ResponseEndBlock.Builder, com.ono.chain.jabci.types.ResponseEndBlockOrBuilder>
+        com.ono.chain.jabci.types.ResponseEndBlock, com.ono.chain.jabci.types.ResponseEndBlock.Builder, com.ono.chain.jabci.types.ResponseEndBlockOrBuilder> 
         getEndBlockFieldBuilder() {
       if (endBlockBuilder_ == null) {
         if (!(valueCase_ == 11)) {
@@ -2858,7 +2855,7 @@ private static final long serialVersionUID = 0L;
      * <code>.com.ono.chain.jabci.types.ResponseCommit commit = 12;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.ono.chain.jabci.types.ResponseCommit, com.ono.chain.jabci.types.ResponseCommit.Builder, com.ono.chain.jabci.types.ResponseCommitOrBuilder>
+        com.ono.chain.jabci.types.ResponseCommit, com.ono.chain.jabci.types.ResponseCommit.Builder, com.ono.chain.jabci.types.ResponseCommitOrBuilder> 
         getCommitFieldBuilder() {
       if (commitBuilder_ == null) {
         if (!(valueCase_ == 12)) {
@@ -2878,7 +2875,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
-      return super.setUnknownFieldsProto3(unknownFields);
+      return super.setUnknownFields(unknownFields);
     }
 
     @java.lang.Override

@@ -23,7 +23,7 @@ public interface ResponseInitChainOrBuilder extends
   /**
    * <code>repeated .com.ono.chain.jabci.types.ValidatorUpdate validators = 2;</code>
    */
-  java.util.List<com.ono.chain.jabci.types.ValidatorUpdate>
+  java.util.List<com.ono.chain.jabci.types.ValidatorUpdate> 
       getValidatorsList();
   /**
    * <code>repeated .com.ono.chain.jabci.types.ValidatorUpdate validators = 2;</code>
@@ -36,7 +36,7 @@ public interface ResponseInitChainOrBuilder extends
   /**
    * <code>repeated .com.ono.chain.jabci.types.ValidatorUpdate validators = 2;</code>
    */
-  java.util.List<? extends com.ono.chain.jabci.types.ValidatorUpdateOrBuilder>
+  java.util.List<? extends com.ono.chain.jabci.types.ValidatorUpdateOrBuilder> 
       getValidatorsOrBuilderList();
   /**
    * <code>repeated .com.ono.chain.jabci.types.ValidatorUpdate validators = 2;</code>

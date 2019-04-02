@@ -46,7 +46,7 @@ public interface RequestInitChainOrBuilder extends
   /**
    * <code>repeated .com.ono.chain.jabci.types.ValidatorUpdate validators = 4;</code>
    */
-  java.util.List<com.ono.chain.jabci.types.ValidatorUpdate>
+  java.util.List<com.ono.chain.jabci.types.ValidatorUpdate> 
       getValidatorsList();
   /**
    * <code>repeated .com.ono.chain.jabci.types.ValidatorUpdate validators = 4;</code>
@@ -59,7 +59,7 @@ public interface RequestInitChainOrBuilder extends
   /**
    * <code>repeated .com.ono.chain.jabci.types.ValidatorUpdate validators = 4;</code>
    */
-  java.util.List<? extends com.ono.chain.jabci.types.ValidatorUpdateOrBuilder>
+  java.util.List<? extends com.ono.chain.jabci.types.ValidatorUpdateOrBuilder> 
       getValidatorsOrBuilderList();
   /**
    * <code>repeated .com.ono.chain.jabci.types.ValidatorUpdate validators = 4;</code>

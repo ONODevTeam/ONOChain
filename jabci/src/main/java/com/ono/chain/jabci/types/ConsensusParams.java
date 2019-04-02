@@ -87,7 +87,7 @@ private static final long serialVersionUID = 0L;
             break;
           }
           default: {
-            if (!parseUnknownFieldProto3(
+            if (!parseUnknownField(
                 input, unknownFields, extensionRegistry, tag)) {
               done = true;
             }
@@ -107,13 +107,13 @@ private static final long serialVersionUID = 0L;
   }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.ono.chain.jabci.types.Types.internal_static_com_github_jtendermint_jabci_types_ConsensusParams_descriptor;
+    return com.ono.chain.jabci.types.Types.internal_static_com_ono_chain_jabci_types_ConsensusParams_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.ono.chain.jabci.types.Types.internal_static_com_github_jtendermint_jabci_types_ConsensusParams_fieldAccessorTable
+    return com.ono.chain.jabci.types.Types.internal_static_com_ono_chain_jabci_types_ConsensusParams_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
             com.ono.chain.jabci.types.ConsensusParams.class, com.ono.chain.jabci.types.ConsensusParams.Builder.class);
   }
@@ -240,24 +240,23 @@ private static final long serialVersionUID = 0L;
     }
     com.ono.chain.jabci.types.ConsensusParams other = (com.ono.chain.jabci.types.ConsensusParams) obj;
 
-    boolean result = true;
-    result = result && (hasBlockSize() == other.hasBlockSize());
+    if (hasBlockSize() != other.hasBlockSize()) return false;
     if (hasBlockSize()) {
-      result = result && getBlockSize()
-          .equals(other.getBlockSize());
+      if (!getBlockSize()
+          .equals(other.getBlockSize())) return false;
     }
-    result = result && (hasEvidence() == other.hasEvidence());
+    if (hasEvidence() != other.hasEvidence()) return false;
     if (hasEvidence()) {
-      result = result && getEvidence()
-          .equals(other.getEvidence());
+      if (!getEvidence()
+          .equals(other.getEvidence())) return false;
     }
-    result = result && (hasValidator() == other.hasValidator());
+    if (hasValidator() != other.hasValidator()) return false;
     if (hasValidator()) {
-      result = result && getValidator()
-          .equals(other.getValidator());
+      if (!getValidator()
+          .equals(other.getValidator())) return false;
     }
-    result = result && unknownFields.equals(other.unknownFields);
-    return result;
+    if (!unknownFields.equals(other.unknownFields)) return false;
+    return true;
   }
 
   @java.lang.Override
@@ -388,13 +387,13 @@ private static final long serialVersionUID = 0L;
       com.ono.chain.jabci.types.ConsensusParamsOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.ono.chain.jabci.types.Types.internal_static_com_github_jtendermint_jabci_types_ConsensusParams_descriptor;
+      return com.ono.chain.jabci.types.Types.internal_static_com_ono_chain_jabci_types_ConsensusParams_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.ono.chain.jabci.types.Types.internal_static_com_github_jtendermint_jabci_types_ConsensusParams_fieldAccessorTable
+      return com.ono.chain.jabci.types.Types.internal_static_com_ono_chain_jabci_types_ConsensusParams_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.ono.chain.jabci.types.ConsensusParams.class, com.ono.chain.jabci.types.ConsensusParams.Builder.class);
     }
@@ -441,7 +440,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.ono.chain.jabci.types.Types.internal_static_com_github_jtendermint_jabci_types_ConsensusParams_descriptor;
+      return com.ono.chain.jabci.types.Types.internal_static_com_ono_chain_jabci_types_ConsensusParams_descriptor;
     }
 
     @java.lang.Override
@@ -482,35 +481,35 @@ private static final long serialVersionUID = 0L;
 
     @java.lang.Override
     public Builder clone() {
-      return (Builder) super.clone();
+      return super.clone();
     }
     @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
         java.lang.Object value) {
-      return (Builder) super.setField(field, value);
+      return super.setField(field, value);
     }
     @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
-      return (Builder) super.clearField(field);
+      return super.clearField(field);
     }
     @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
-      return (Builder) super.clearOneof(oneof);
+      return super.clearOneof(oneof);
     }
     @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
         int index, java.lang.Object value) {
-      return (Builder) super.setRepeatedField(field, index, value);
+      return super.setRepeatedField(field, index, value);
     }
     @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
         java.lang.Object value) {
-      return (Builder) super.addRepeatedField(field, value);
+      return super.addRepeatedField(field, value);
     }
     @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
@@ -562,7 +561,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private com.ono.chain.jabci.types.BlockSizeParams blockSize_ = null;
+    private com.ono.chain.jabci.types.BlockSizeParams blockSize_;
     private com.google.protobuf.SingleFieldBuilderV3<
         com.ono.chain.jabci.types.BlockSizeParams, com.ono.chain.jabci.types.BlockSizeParams.Builder, com.ono.chain.jabci.types.BlockSizeParamsOrBuilder> blockSizeBuilder_;
     /**
@@ -666,7 +665,7 @@ private static final long serialVersionUID = 0L;
      * <code>.com.ono.chain.jabci.types.BlockSizeParams block_size = 1;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.ono.chain.jabci.types.BlockSizeParams, com.ono.chain.jabci.types.BlockSizeParams.Builder, com.ono.chain.jabci.types.BlockSizeParamsOrBuilder>
+        com.ono.chain.jabci.types.BlockSizeParams, com.ono.chain.jabci.types.BlockSizeParams.Builder, com.ono.chain.jabci.types.BlockSizeParamsOrBuilder> 
         getBlockSizeFieldBuilder() {
       if (blockSizeBuilder_ == null) {
         blockSizeBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -679,7 +678,7 @@ private static final long serialVersionUID = 0L;
       return blockSizeBuilder_;
     }
 
-    private com.ono.chain.jabci.types.EvidenceParams evidence_ = null;
+    private com.ono.chain.jabci.types.EvidenceParams evidence_;
     private com.google.protobuf.SingleFieldBuilderV3<
         com.ono.chain.jabci.types.EvidenceParams, com.ono.chain.jabci.types.EvidenceParams.Builder, com.ono.chain.jabci.types.EvidenceParamsOrBuilder> evidenceBuilder_;
     /**
@@ -783,7 +782,7 @@ private static final long serialVersionUID = 0L;
      * <code>.com.ono.chain.jabci.types.EvidenceParams evidence = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.ono.chain.jabci.types.EvidenceParams, com.ono.chain.jabci.types.EvidenceParams.Builder, com.ono.chain.jabci.types.EvidenceParamsOrBuilder>
+        com.ono.chain.jabci.types.EvidenceParams, com.ono.chain.jabci.types.EvidenceParams.Builder, com.ono.chain.jabci.types.EvidenceParamsOrBuilder> 
         getEvidenceFieldBuilder() {
       if (evidenceBuilder_ == null) {
         evidenceBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -796,7 +795,7 @@ private static final long serialVersionUID = 0L;
       return evidenceBuilder_;
     }
 
-    private com.ono.chain.jabci.types.ValidatorParams validator_ = null;
+    private com.ono.chain.jabci.types.ValidatorParams validator_;
     private com.google.protobuf.SingleFieldBuilderV3<
         com.ono.chain.jabci.types.ValidatorParams, com.ono.chain.jabci.types.ValidatorParams.Builder, com.ono.chain.jabci.types.ValidatorParamsOrBuilder> validatorBuilder_;
     /**
@@ -900,7 +899,7 @@ private static final long serialVersionUID = 0L;
      * <code>.com.ono.chain.jabci.types.ValidatorParams validator = 3;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.ono.chain.jabci.types.ValidatorParams, com.ono.chain.jabci.types.ValidatorParams.Builder, com.ono.chain.jabci.types.ValidatorParamsOrBuilder>
+        com.ono.chain.jabci.types.ValidatorParams, com.ono.chain.jabci.types.ValidatorParams.Builder, com.ono.chain.jabci.types.ValidatorParamsOrBuilder> 
         getValidatorFieldBuilder() {
       if (validatorBuilder_ == null) {
         validatorBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -915,7 +914,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
-      return super.setUnknownFieldsProto3(unknownFields);
+      return super.setUnknownFields(unknownFields);
     }
 
     @java.lang.Override

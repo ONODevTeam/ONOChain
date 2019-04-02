@@ -66,7 +66,7 @@ public interface ResponseCheckTxOrBuilder extends
   /**
    * <code>repeated .com.ono.chain.jabci.types.KVPair tags = 7;</code>
    */
-  java.util.List<com.ono.chain.jabci.types.KVPair>
+  java.util.List<com.ono.chain.jabci.types.KVPair> 
       getTagsList();
   /**
    * <code>repeated .com.ono.chain.jabci.types.KVPair tags = 7;</code>
@@ -79,7 +79,7 @@ public interface ResponseCheckTxOrBuilder extends
   /**
    * <code>repeated .com.ono.chain.jabci.types.KVPair tags = 7;</code>
    */
-  java.util.List<? extends com.ono.chain.jabci.types.KVPairOrBuilder>
+  java.util.List<? extends com.ono.chain.jabci.types.KVPairOrBuilder> 
       getTagsOrBuilderList();
   /**
    * <code>repeated .com.ono.chain.jabci.types.KVPair tags = 7;</code>
